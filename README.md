@@ -1,7 +1,9 @@
 # IntroductionToRobotics
 ## Descriere initiala ##
-Profesor curs:       Andrei Dumitru 
+Profesor curs:       Andrei Dumitru
+
 Profesor laborator:  Radu Stefan-Octavian 
+
 Introducere in robotica este o materie optionala ce este predata in anul 3, semestrul 1 la Facultatea de Matematica si Informatica din Bucuresti. Repository-ul are ca scop prezentarea temelor cu detaliile necesare si rezolvarii acestora. 
 
 
