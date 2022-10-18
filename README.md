@@ -1,4 +1,4 @@
-# IntroductionToRobotics
+# Introduction To Robotics (2022 - 2023)
 ## Descriere initiala ##
 Profesor curs:       Andrei Dumitru
 
