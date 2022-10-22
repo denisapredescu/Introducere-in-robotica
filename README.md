@@ -12,4 +12,4 @@ This repository contains the weekly homework that include requirements, code, im
 
 - create this public repository 
 
-### Homework 0 ###
+### Homework 1 ###
