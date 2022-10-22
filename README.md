@@ -2,7 +2,7 @@
 
 Introduction to Robotics laboratory homeworks, 3rd year, 1st semester at the Faculty of Matematics and Computer Science, University of Bucharest. 
 
-This repository contains the weekly homework that include requirements, code, implementation details and images.
+This repository contains the weekly homeworks that include requirements, code, implementation details and images.
 
 ## Homeworks ##
 ### Homework 0 ###
