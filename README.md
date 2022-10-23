@@ -24,6 +24,6 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ![WhatsApp Image 2022-10-23 at 16 10 26(2)](https://user-images.githubusercontent.com/86727047/197394422-fb8d6c88-c8db-495f-85a5-aa05c544ec3d.jpeg)
 
-- Link to video showcasing functionality
+- Link to video showcasing functionality: https://www.youtube.com/watch?v=hZ9irYRZ2V8
 
 
