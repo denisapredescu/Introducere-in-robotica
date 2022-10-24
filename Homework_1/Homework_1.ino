@@ -34,7 +34,7 @@ void loop() {
   setColor(potRedValue, potGreenValue, potBlueValue);
 }
 
-void setColor (int potRedValue, int greenPotValue, int potBlueValue) {
+void setColor(int potRedValue, int greenPotValue, int potBlueValue) {
   analogWrite(redPin, map(potRedValue, minPotValue, maxPotValue, minLedValue, maxLedvalue));
   analogWrite(greenPin, map(potGreenValue, minPotValue, maxPotValue, minLedValue, maxLedvalue));
   analogWrite(bluePin, map(potBlueValue, minPotValue, maxPotValue, minLedValue, maxLedvalue));
