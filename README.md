@@ -6,7 +6,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ## Homeworks ##
 ### Homework #0: Setup ###
-- **install Arduino IDE* 
+- **install Arduino IDE**
 
  <details><summary>Proof</summary>
   
