@@ -6,13 +6,15 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ### Homework #0: Setup ###
 ---
-<details><summary> install Arduino IDE (with proof)</summary>
+**Install Arduino IDE** 
+
+<details><summary>Picture of the setup</summary>
   
 ![arduino_dovada](https://user-images.githubusercontent.com/86727047/196508227-7b9e3b06-2112-4c6b-9854-d9cc0251f7e2.png)
 
 </details>
 
-create this public repository 
+**Create this public repository** 
 
 
 ### Homework #1: RGB led ###
@@ -36,7 +38,7 @@ create this public repository
 ---
 **Task Requirements**: I used 2 leds to represent the traffic lights for people and 3 leds to represent the traffic lights for people. It's a traffic light system just like in real life: green light for cars means that is red light for people, yellow light for cars means still red for people, red light for cars means that is green light for people and a buzzer starts beeping. When the red light for cars is coming to an end, the beep sounds faster.
 
- <details><summary>Pictures of the setup</summary>
+ <details><summary>Picture of the setup</summary>
 
   Not yet
   
