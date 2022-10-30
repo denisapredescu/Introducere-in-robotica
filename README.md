@@ -12,7 +12,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 </details>
 
-- create this public repository 
+create this public repository 
 
 
 ### Homework #1: RGB led ###
