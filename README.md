@@ -40,11 +40,9 @@ This repository contains the weekly homeworks that include requirements, code, i
 
  <details><summary>Picture of the setup</summary>
 
-![Image 1 - homework #2](https://user-images.githubusercontent.com/86727047/198901918-68576ad2-7dea-4b8b-8abf-3035d8938d6b.jpg =350x350)
+![Image 1 - homework #2](https://user-images.githubusercontent.com/86727047/198901921-0ccbec14-cc9d-4096-bfeb-3ef67727b48d.jpg)
 
-![Image 2 - homework #2](https://user-images.githubusercontent.com/86727047/198901921-0ccbec14-cc9d-4096-bfeb-3ef67727b48d.jpg)
-
-![Image 3 - homework #2](https://user-images.githubusercontent.com/86727047/198901962-27a5a459-eb9a-46f8-b34f-b7c88d17d208.jpg)
+![Image 2 - homework #2](https://user-images.githubusercontent.com/86727047/198901962-27a5a459-eb9a-46f8-b34f-b7c88d17d208.jpg)
 
 </details>
 
