@@ -6,7 +6,9 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ### Homework #0: Setup ###
 ---
-- **install Arduino IDE** <details><summary>Proof</summary>
+- **install Arduino IDE**
+    
+    <details><summary>Proof</summary>
   
 ![arduino_dovada](https://user-images.githubusercontent.com/86727047/196508227-7b9e3b06-2112-4c6b-9854-d9cc0251f7e2.png)
 </details>
