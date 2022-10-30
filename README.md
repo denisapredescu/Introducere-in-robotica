@@ -4,7 +4,7 @@ Introduction to Robotics laboratory homeworks, 3rd year, 1st semester at the Fac
 
 This repository contains the weekly homeworks that include requirements, code, implementation details and images.
 
-## Homework #0: Setup ##
+### Homework #0: Setup ###
 ---
 - **install Arduino IDE**
 
@@ -16,7 +16,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 - create this public repository 
 
 
-## Homework #1: RGB led ##
+### Homework #1: RGB led ###
 ---
 **Task Requirements**: Use a separat potentiometer in controlling each of the color of the RGB led (Red, Green and Blue).  The control must be done with digital electronics (aka you must read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led).
 
@@ -33,7 +33,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=hZ9irYRZ2V8)
 
 
-## Homework #2: Traffic lights for a crosswalk ##
+### Homework #2: Traffic lights for a crosswalk ###
 ---
 **Task Requirements**: I used 2 leds to represent the traffic lights for people and 3 leds to represent the traffic lights for people. It's a traffic light system just like in real life: green light for cars means that is red light for people, yellow light for cars means still red for people, red light for cars means that is green light for people and a buzzer starts beeping. When the red light for cars is coming to an end, the beep sounds faster.
 
