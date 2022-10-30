@@ -6,6 +6,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ## Homeworks ##
 ### Homework #0: Setup ###
+---
 - **install Arduino IDE**
 
  <details><summary>Proof</summary>
@@ -16,7 +17,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 - create this public repository 
 
 ### Homework #1: RGB led ###
-
+---
 **Task Requirements**: Use a separat potentiometer in controlling each of the color of the RGB led (Red, Green and Blue).  The control must be done with digital electronics (aka you must read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led).
 
  <details><summary>Pictures of the setup</summary>
@@ -33,7 +34,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 
 ### Homework #2: Traffic lights for a crosswalk ###
-
+---
 **Task Requirements**: I used 2 leds to represent the traffic lights for people and 3 leds to represent the traffic lights for people. It's a traffic light system just like in real life: green light for cars means that is red light for people, yellow light for cars means still red for people, red light for cars means that is green light for people and a buzzer starts beeping. When the red light for cars is coming to an end, the beep sounds faster.
 
  <details><summary>Pictures of the setup</summary>
