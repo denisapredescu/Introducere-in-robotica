@@ -19,7 +19,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ### Homework #1: RGB led ###
 ---
-**Task Requirements**: Use a separat potentiometer in controlling each of the color of the RGB led (Red, Green and Blue).  The control must be done with digital electronics (aka you must read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led).
+**Task Requirements**: I used a separat potentiometer in controlling each of the color of the RGB led (Red, Green and Blue).  The control is done with digital electronics (aka i read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led).
 
  <details><summary>Pictures of the setup</summary>
 
