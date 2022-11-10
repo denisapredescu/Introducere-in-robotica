@@ -68,6 +68,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 :grey_exclamation: If i press long the button from state 1, it resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
 
 <details><summary>Segments movement</summary>
+  
 |CURRENT SEGMNET| UP| DOWN| LEFT| RIGHT|
 | ----| ---- | ---- | ---|----|
 | a| a| g| f| b|
