@@ -107,7 +107,7 @@ void loop() {
           if (isLongDetected && currentState == 1) {
             resetDisplay();
           } else if (isShortDetected) {
-            currentState = (currentState + 1) % 2;  // currenrState can be 1 or 2
+            currentState = (currentState + 1) % 2;  // currentState can be 1 or 2
           }
       }
     }
