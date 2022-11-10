@@ -69,6 +69,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 **Segments movement**
 |CURRENT SEGMNET| UP| DOWN| LEFT| RIGHT|
+| ----| ---- | ---- | ---|----|
 | a| a| g| f| b|
 | b| a| g| f| b|
 | c| g| d| e| dp|
