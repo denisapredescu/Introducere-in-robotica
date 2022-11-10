@@ -34,7 +34,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=hZ9irYRZ2V8)
 
 
-### Homework #2: Traffic lights for a crosswalk  :vertical_traffic_light: walking_woman
+### Homework #2: Traffic lights for a crosswalk  :vertical_traffic_light: :walking_woman:
 ---
 **Task Requirements**: I used 2 leds to represent the traffic lights for people and 3 leds to represent the traffic lights for people. It's a traffic light system just like in real life: green light for cars means that is red light for people, yellow light for cars means still red for people, red light for cars means that is green light for people and a buzzer starts beeping. When the red light for cars is coming to an end, the beep sounds faster.
 
