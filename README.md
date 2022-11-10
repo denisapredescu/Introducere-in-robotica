@@ -58,10 +58,10 @@ This repository contains the weekly homeworks that include requirements, code, i
 - wires
 
 **Task Requirements**: 
-- Using the joystick, i can move between segments and "draw" on the display. The movement is natural meaning that from the current position i can move only to neighbords. 
-- On the default state, the current segment is blinking. Using the joystick i move to other segment (just neighbors). 
-- If i press short the button, the current segment stop blinking. Moving the joystick up and down i modify the state of the segmnet (UP = ON and DOWN = OFF). Clinking again short the joystick, the segment state is saved and exit to state 1 (default state). Clinking long doesn't trigger anything.
-- If i press long the button from state 1, it resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
+:grey_exclamation: Using the joystick, i can move between segments and "draw" on the display. The movement is natural meaning that from the current position i can move only to neighbords. 
+:grey_exclamation: On the default state, the current segment is blinking. Using the joystick i move to other segment (just neighbors). 
+:grey_exclamation: If i press short the button, the current segment stop blinking. Moving the joystick up and down i modify the state of the segmnet (UP = ON and DOWN = OFF). Clinking again short the joystick, the segment state is saved and exit to state 1 (default state). Clinking long doesn't trigger anything.
+:grey_exclamation: If i press long the button from state 1, it resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
 
 <details><summary>Picture of the setup</summary>
 
