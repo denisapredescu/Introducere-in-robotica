@@ -52,4 +52,4 @@ This repository contains the weekly homeworks that include requirements, code, i
 ### Homework #3: Joystick controlling the position of the segment and ”draw” on the display ###
 ---
 
-<details><summary>**Picture of the setup**</summary>
+<details>**<summary>Picture of the setup</summary>**
