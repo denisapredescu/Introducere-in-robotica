@@ -46,7 +46,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 </details>
 
-[**Link to video showcasing functionality**](https://youtu.be/JYlwsl6Z6BY)
+[**Link to video showcasing functionality**](https://www.youtube.com/watch?v=JYlwsl6Z6BY)
 
 
 ### Homework #3: Joystick controlling the position of the segment and ”draw” on the display :joystick:
@@ -73,4 +73,4 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 </details>  
 
-[**Link to video showcasing functionality**]
+[**Link to video showcasing functionality**](https://www.youtube.com/watch?v=QNXynbl0U4Y)
