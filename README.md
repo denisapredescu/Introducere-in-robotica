@@ -4,7 +4,7 @@ Introduction to Robotics laboratory homeworks, 3rd year, 1st semester at the Fac
 
 This repository contains the weekly homeworks that include requirements, code, implementation details and images.
 
-### Homework #0: Setup ### :heavy_check_mark:
+### Homework #0: Setup :heavy_check_mark:
 ---
 **Install Arduino IDE** 
 
@@ -17,7 +17,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 **Create this public repository** 
 
 
-### Homework #1: RGB led ### 	:bulb:
+### Homework #1: RGB led :bulb:
 ---
 **Task Requirements**: I used a separat potentiometer in controlling each of the color of the RGB led (Red, Green and Blue).  The control is done with digital electronics (aka i read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led).
 
@@ -34,7 +34,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=hZ9irYRZ2V8)
 
 
-### Homework #2: Traffic lights for a crosswalk ### :vertical_traffic_light: walking_woman
+### Homework #2: Traffic lights for a crosswalk  :vertical_traffic_light: walking_woman
 ---
 **Task Requirements**: I used 2 leds to represent the traffic lights for people and 3 leds to represent the traffic lights for people. It's a traffic light system just like in real life: green light for cars means that is red light for people, yellow light for cars means still red for people, red light for cars means that is green light for people and a buzzer starts beeping. When the red light for cars is coming to an end, the beep sounds faster.
 
@@ -49,7 +49,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 [**Link to video showcasing functionality**](https://youtu.be/JYlwsl6Z6BY)
 
 
-### Homework #3: Joystick controlling the position of the segment and ”draw” on the display ### :joystick:
+### Homework #3: Joystick controlling the position of the segment and ”draw” on the display :joystick:
 ---
 **Components**:
 - 7-segment display
@@ -72,3 +72,5 @@ This repository contains the weekly homeworks that include requirements, code, i
 ![Image 3](https://user-images.githubusercontent.com/86727047/201165856-08c59a6b-9c90-422b-bac6-ec947bea1804.jpg)
 
 </details>  
+
+[**Link to video showcasing functionality**]
