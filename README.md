@@ -8,7 +8,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 ---
 **Install Arduino IDE** 
 
-<details><summary>Picture of the setup</summary>
+<details><summary><b>Picture of the setup</b></summary>
   
 ![arduino_dovada](https://user-images.githubusercontent.com/86727047/196508227-7b9e3b06-2112-4c6b-9854-d9cc0251f7e2.png)
 
@@ -21,7 +21,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 ---
 **Task Requirements**: I used a separat potentiometer in controlling each of the color of the RGB led (Red, Green and Blue).  The control is done with digital electronics (aka i read the value of the potentiometer with Arduino, and write a mapped value to each of the pins connectedto the led).
 
- <details><summary>Pictures of the setup</summary>
+ <details><summary><b>Pictures of the setup</b></summary>
 
 ![Image 1](https://user-images.githubusercontent.com/86727047/197394418-cf18ab85-059f-4382-b20b-33862efd86c1.jpeg)
 
@@ -38,7 +38,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 ---
 **Task Requirements**: I used 2 leds to represent the traffic lights for people and 3 leds to represent the traffic lights for people. It's a traffic light system just like in real life: green light for cars means that is red light for people, yellow light for cars means still red for people, red light for cars means that is green light for people and a buzzer starts beeping. When the red light for cars is coming to an end, the beep sounds faster.
 
- <details><summary>Picture of the setup</summary>
+ <details><summary><b>Picture of the setup </b></summary>
 
 ![Image 1 - homework #2](https://user-images.githubusercontent.com/86727047/198901921-0ccbec14-cc9d-4096-bfeb-3ef67727b48d.jpg)
 
@@ -67,7 +67,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 :grey_exclamation: If i press long the button from state 1, it resets the entire display by turning all the segments OFF and moving the current position to the decimal point.
 
-<details><summary>Segments movement</summary>
+<details><summary><b> Segments movement </b></summary>
   
 |CURRENT SEGMNET| UP| DOWN| LEFT| RIGHT|
 | ----| ---- | ---- | ---|----|
@@ -83,7 +83,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 </details> 
 
 
-<details><summary>Picture of the setup</summary>
+<details><summary><b>Picture of the setup </b></summary>
 
 ![Image 1](https://user-images.githubusercontent.com/86727047/201165885-803338be-4dea-424f-987d-18898eb74f41.jpg)
 
