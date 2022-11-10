@@ -1,7 +1,7 @@
 // declare all the joystick pins
-const int pinSW = 2; // digital pin connected to switch output
-const int pinX = A0; // A0 - analog pin connected to X output
-const int pinY = A1; // A1 - analog pin connected to Y output
+const int pinSW = 2;
+const int pinX = A0;
+const int pinY = A1;
 
 // declare all the segments pins
 const int pinA = 4;
