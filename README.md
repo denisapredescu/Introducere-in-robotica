@@ -59,7 +59,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 **Task Requirements**: 
 
-:grey_exclamation: Using the joystick, i can move between segments and "draw" on the display. The movement is natural meaning that from the current position i can move only to neighbords. 
+:grey_exclamation: Using the joystick, i can move between segments and "draw" on the display. The movement is natural meaning that from the current position i can move only to neighbors. 
 
 :grey_exclamation: On the default state, the current segment is blinking. Using the joystick i move to other segment (just neighbors). 
 
@@ -94,3 +94,34 @@ This repository contains the weekly homeworks that include requirements, code, i
 </details>  
 
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=QNXynbl0U4Y)
+
+### Homework #4: Joystick that moves through a 4 digit 7 segment display digits, changes the number of the digits and resets the display :joystick:
+
+**Components**:
+- joystick
+- 4 digit 7-segment display
+- 74hc595 shift register
+- wires
+ 
+**Task Requirements**: 
+
+:pen: One important detail: the decimal points are always off except on the current digit position.
+
+:pen: The default state is the one were we can move from one digit to another. At first, all the 4 digits are 0 and the current position is set to the first (aka rightmost) digit. A blinking decimal point shows the current digit position. By moving the joystick on Y axis, i move the current digit position left or right (i put the condition that i can not go from the leftmost digit to the rightmost digit by moving left and the same i can not go from the rightmost digit to the leftmost one by moving right). On this state, the X axis of the joystick does not do anything. 
+
+:pen: I press short the button to lock in on the current digit. New the decimal point from the current digit stays always on, is no longer blinking. This trigger the second state. On this second state, i can increase and decrease the display number in hex (0 to F) on the selected digit by using the joystick on the X axis (ofcourse in this state the Y axis does not do anything). By pressing again the button (long or short), i reenter the first/default state.
+
+:pen: I press long the button to reset. When resetting, all the digits go back to 0 and the current position is set to the first digit, in the first state.
+
+<details><summary><b>Picture of the setup </b></summary>
+
+
+
+</details>  
+
+[**Link to video showcasing functionality**]
+
+
+
+
+
