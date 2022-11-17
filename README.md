@@ -115,11 +115,13 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 <details><summary><b>Picture of the setup </b></summary>
 
-Not yet.
+![WhatsApp Image 2022-11-17 at 20 06 22](https://user-images.githubusercontent.com/86727047/202525635-598cc224-4541-43ff-bf13-6590389cb3e2.jpeg)
+
+![WhatsApp Image 2022-11-17 at 20 06 23 (1)](https://user-images.githubusercontent.com/86727047/202525650-fa4b8766-0bad-4719-a726-be814514943b.jpeg)
 
 </details>  
 
-[**Link to video showcasing functionality**]
+[**Link to video showcasing functionality**](https://www.youtube.com/watch?v=TL89IkrLTlU)
 
 
 
