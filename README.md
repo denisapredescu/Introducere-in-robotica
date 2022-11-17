@@ -96,7 +96,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=QNXynbl0U4Y)
 
 ### Homework #4: Joystick that moves through a 4 digit 7 segment display digits, changes the number of the digits and resets the display :joystick:
-
+---
 **Components**:
 - joystick
 - 4 digit 7-segment display
@@ -122,8 +122,3 @@ This repository contains the weekly homeworks that include requirements, code, i
 </details>  
 
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=TL89IkrLTlU)
-
-
-
-
-
