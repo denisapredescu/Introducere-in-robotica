@@ -38,7 +38,7 @@ byte reading = 1;
 unsigned int lastDebounceTime = 0;
 unsigned int debounceDelay = 50;
 
-const int shortPressTime = 800;
+const int shortPressTime = 1000;
 const int longPressTime = 1000;
 unsigned long pressedTime  = 0;
 unsigned long releasedTime = 0;
