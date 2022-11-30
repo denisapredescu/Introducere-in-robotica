@@ -38,7 +38,7 @@ byte reading = 1;
 unsigned int lastDebounceTime = 0;
 unsigned int debounceDelay = 50;
 
-const int shortPressTime = 1000;
+const int shortPressTime = 50;
 const int longPressTime = 1000;
 unsigned long pressedTime  = 0;
 unsigned long releasedTime = 0;
@@ -106,9 +106,9 @@ void checkButtonPressed() {
           releasedTime = millis();
           long pressDuration = releasedTime - pressedTime;
           
-          if (pressDuration > longPressTime && currentState == 1) {
+          if (pressDuration >= longPressTime && currentState == 1) {
             resetDisplay();
-          } else if (pressDuration < shortPressTime) {
+          } else if (pressDuration > shortPressTime && pressDuration < longPressTime) {
             if (currentState == 1) {
               currentState = 2;
             } else if(currentState == 2) {
