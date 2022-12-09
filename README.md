@@ -145,7 +145,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 **How to play**: 
 
-The minigame is a snake game: a snake of lenght 1 tries to eat the blinking food that is generated random on matrix. Every food increases the score with 1 point and the game ends when the snake reaches 10 foods.
+The minigame is a snake game: a snake of lenght 1 tries to eat the blinking food that is generated random on matrix. Every food increases the score with 1 point and the game ends when the snake reaches 10 points.
 
 <details><summary><b>Picture of the setup </b></summary>
 
