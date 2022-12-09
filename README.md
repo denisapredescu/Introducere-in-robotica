@@ -155,4 +155,5 @@ The minigame is a snake game: a snake of lenght 1 tries to eat the blinking food
 </details>  
 
 [**Link to video showcasing functionality, version with potentiometer**](https://www.youtube.com/watch?v=bCongoafsAU&ab_channel=DenisaPredescu)
+
 [**Link to video showcasing functionality, version with LDC contrast in settings menu**](https://www.youtube.com/watch?v=Ocb6fcoXN3g&ab_channel=DenisaPredescu)
