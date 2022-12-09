@@ -123,7 +123,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=TL89IkrLTlU)
 
-### Homework #5: <i> Menu for a game </i> + snake for exemple of minigame :video_game: :snake:
+### Homework #5: <i> Game menu </i> + snake for exemple of minigame :video_game: :snake:
 ---
 **Components**:
 - joystick (for moving and clicking)
