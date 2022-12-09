@@ -130,7 +130,6 @@ This repository contains the weekly homeworks that include requirements, code, i
 - matrix 8x8
 - MAX7219 Driver5 + 10k ohm resister
 - LCD
-- potentiometer (to ajust LCD contrast)
 - buzzer (for sound) + 100 ohm resistor
 - 2 mini + 1 big breadboards
 - wires
@@ -149,11 +148,11 @@ The minigame is a snake game: a snake of lenght 1 tries to eat the blinking food
 
 <details><summary><b>Picture of the setup </b></summary>
 
-![image00001](https://user-images.githubusercontent.com/86727047/206620126-c943a00f-8381-473f-bcd5-2ad68c560060.jpeg)
+![WhatsApp Image 2022-12-09 at 23 11 14](https://user-images.githubusercontent.com/86727047/206796984-fd43c3e2-755c-4ae4-b777-bf2369468f95.jpeg)
 
-![image00003](https://user-images.githubusercontent.com/86727047/206620155-5f4b4766-2eb6-4103-b96a-4c8d46e6c2e4.jpeg)
+![WhatsApp Image 2022-12-09 at 23 11 14 (1)](https://user-images.githubusercontent.com/86727047/206797000-3782eb41-0ed5-4d53-a038-dc49a52ad1c2.jpeg)
 
 </details>  
 
-[**Link to video showcasing functionality**](https://www.youtube.com/watch?v=bCongoafsAU&ab_channel=DenisaPredescu)
-
+[**Link to video showcasing functionality, version with potentiometer**](https://www.youtube.com/watch?v=bCongoafsAU&ab_channel=DenisaPredescu)
+[**Link to video showcasing functionality, version with LDC contrast in settings menu**](https://www.youtube.com/watch?v=Ocb6fcoXN3g&ab_channel=DenisaPredescu)
