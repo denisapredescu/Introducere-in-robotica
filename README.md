@@ -122,3 +122,24 @@ This repository contains the weekly homeworks that include requirements, code, i
 </details>  
 
 [**Link to video showcasing functionality**](https://www.youtube.com/watch?v=TL89IkrLTlU)
+
+### Homework #5: Menu specific for a game + snake for exemple of minigame :video_game: :snake:
+
+**Task Requirements**: 
+
+:battery: Created a menu for a game that contains every real-world game components such as: start game, leaderboard, data about the creator of the game and how to play section. Also a settings menu where the player can ajust the game after his preferences (set a player name for him, set difficulty of the game - low, medium, high -,  turn the sound on/off, set the brightness as he please).
+
+:battery: The leaderboard and the essential settings are saved in EEPROM for future use. :boy:
+
+:battery: The menu is suggestive and furthermore easy to use for a new player.
+
+<details><summary><b>Picture of the setup </b></summary>
+
+![image00001](https://user-images.githubusercontent.com/86727047/206620126-c943a00f-8381-473f-bcd5-2ad68c560060.jpeg)
+
+![image00003](https://user-images.githubusercontent.com/86727047/206620155-5f4b4766-2eb6-4103-b96a-4c8d46e6c2e4.jpeg)
+
+</details>  
+
+[**Link to video showcasing functionality**](https://www.youtube.com/watch?v=bCongoafsAU&ab_channel=DenisaPredescu)
+
