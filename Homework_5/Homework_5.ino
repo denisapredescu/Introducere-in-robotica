@@ -2,6 +2,7 @@
 // position 0: lcdbrightness (value between 0 and 255)
 // position 1: matrixbrightness (value between 0 and 15)
 // position 2: sound (0 or 1)
+// position 3: lcdContrast (value between 25 and 150)
 // position 9: numberOfHighscores (max 5)
 // then leaderboard:
 //      positions 10 - 14  name 1
@@ -20,13 +21,14 @@ const byte clockPin = 11;
 const byte loadPin = 10;
 const byte matrixSize = 8;
 
-const byte RS = 9;
+const byte RS = 13;
 const byte enable = 8;
 const byte d4 = 7;
 const byte d5 = 3;
 const byte d6 = 5;
 const byte d7 = 4;
 const byte lcdBrightnessControlPin = 6;
+const byte lcdContrastControlPin = 9;
 
 LedControl lc = LedControl(dinPin, clockPin, loadPin, 1);
 LiquidCrystal lcd(RS, enable, d4, d5, d6, d7);
@@ -91,9 +93,10 @@ byte difficulty = 0;
 bool sound;
 bool gameOverSoundWasPlayed = false;
 
-// values for brightness
+// values for brightness and contrast
 byte lcdBrightness;
 byte matrixBrightness;
+byte lcdContrast;
 
 // brightnessItem has 2 values:
 // 0 if we are on the lcd brightness element
@@ -297,12 +300,15 @@ void setup() {
   lcd.begin(16, 2);
   pinMode(pinSW, INPUT_PULLUP);
 
-  // setupEEPROM(); // run only once to insert default values in eeprom
+  // setupEEPROM();  // run only once to insert default values in eeprom
   readDataFromEEPROM();
 
   // set the default value for lcd and lc
   pinMode(lcdBrightnessControlPin, OUTPUT);
   analogWrite(lcdBrightnessControlPin, lcdBrightness);
+  pinMode(lcdContrastControlPin, OUTPUT);
+  analogWrite(lcdContrastControlPin, lcdContrast);
+
   lc.shutdown(0, false);                 // turn off power saving, enables display
   lc.setIntensity(0, matrixBrightness);  // sets brightness (0~15 possible values)
 
@@ -786,13 +792,79 @@ void loop() {
             lastSwState = HIGH;
           }
 
-          settingsMenuState = setMenuState(settingsMenuState, 2, 0);
+          settingsMenuState = setMenuState(settingsMenuState, 12, 0);
           break;
 
-        case 2:
+        case 12:
           lcd.clear();
           lcd.setCursor(1, 0);
           lcd.print("Difficulty");
+          lcd.setCursor(0, 1);
+          lcd.print(">LCD contrast");
+
+          lcd.setCursor(15, 0);
+          lcd.write((byte)6);
+          lcd.setCursor(15, 1);
+          lcd.write((byte)7);
+          delay(50);
+
+          if (swState == LOW) {
+            settingsMenuState = 16;  // go to set lcd contrast
+            swState = HIGH;
+            lastSwState = HIGH;
+          }
+
+          settingsMenuState = setMenuState(settingsMenuState, 15, 13);
+          break;
+
+        case 13:
+          lcd.clear();
+          lcd.setCursor(0, 0);
+          lcd.print(">Difficulty");
+          lcd.setCursor(1, 1);
+          lcd.print("LCD contrast");
+
+          lcd.setCursor(15, 0);
+          lcd.write((byte)6);
+          lcd.setCursor(15, 1);
+          lcd.write((byte)7);
+          delay(50);
+
+          if (swState == LOW) {
+            settingsMenuState = 9;  // go to set difficulty section
+            swState = HIGH;
+            lastSwState = HIGH;
+          }
+
+          settingsMenuState = setMenuState(settingsMenuState, 12, 0);
+          break;
+
+        case 14:
+          lcd.clear();
+          lcd.setCursor(0, 0);
+          lcd.print(">LCD contrast");
+          lcd.setCursor(1, 1);
+          lcd.print("Brightness");
+
+          lcd.setCursor(15, 0);
+          lcd.write((byte)6);
+          lcd.setCursor(15, 1);
+          lcd.write((byte)7);
+          delay(50);
+
+          if (swState == LOW) {
+            settingsMenuState = 16;  // go to set lcd contrast
+            swState = HIGH;
+            lastSwState = HIGH;
+          }
+
+          settingsMenuState = setMenuState(settingsMenuState, 15, 13);
+          break;
+
+        case 15:
+          lcd.clear();
+          lcd.setCursor(1, 0);
+          lcd.print("LCD contrast");
           lcd.setCursor(0, 1);
           lcd.print(">Brightness");
 
@@ -809,29 +881,7 @@ void loop() {
             lastSwState = HIGH;
           }
 
-          settingsMenuState = setMenuState(settingsMenuState, 4, 3);
-          break;
-
-        case 3:
-          lcd.clear();
-          lcd.setCursor(0, 0);
-          lcd.print(">Difficulty");
-          lcd.setCursor(1, 1);
-          lcd.print("Brightness");
-
-          lcd.setCursor(15, 0);
-          lcd.write((byte)6);
-          lcd.setCursor(15, 1);
-          lcd.write((byte)7);
-          delay(50);
-
-          if (swState == LOW) {
-            settingsMenuState = 9;  // go to set difficulty section
-            swState = HIGH;
-            lastSwState = HIGH;
-          }
-
-          settingsMenuState = setMenuState(settingsMenuState, 2, 0);
+          settingsMenuState = setMenuState(settingsMenuState, 4, 14);
           break;
 
         case 4:
@@ -876,7 +926,7 @@ void loop() {
             lastSwState = HIGH;
           }
 
-          settingsMenuState = setMenuState(settingsMenuState, 4, 3);
+          settingsMenuState = setMenuState(settingsMenuState, 4, 14);
           break;
 
         case 6:
@@ -969,6 +1019,19 @@ void loop() {
             EEPROM.put(0, lcdBrightness);
             EEPROM.put(1, matrixBrightness);
             settingsMenuState = 5;
+            swState = HIGH;
+            lastSwState = HIGH;
+          }
+          break;
+
+        case 16:  // lcd contrast control
+          lcd.createChar(0, brightnessBar);
+          lcd.createChar(1, brightnessPlaceholder);
+
+          setContrast();
+          if (swState == LOW) {  // go back to settings menu to "Brightness" line and save the edited info
+            EEPROM.put(3, lcdContrast);
+            settingsMenuState = 14;
             swState = HIGH;
             lastSwState = HIGH;
           }
@@ -1205,7 +1268,7 @@ void movingBetweenPositions() {
 void setDifficulty() {
   lcd.clear();
   lcd.setCursor(0, 0);
-  lcd.print("low medium hight");
+  lcd.print("low medium high");
 
   if (difficulty == 0) {
     lcd.setCursor(1, 1);
@@ -1271,6 +1334,69 @@ void movingOnOff() {
   }
   if (xValue < maxThreshold && xValue > minThreshold) {
     xJoystickState = false;
+  }
+}
+
+void setContrast() {
+  lcd.clear();
+  lcd.setCursor(0, 0);
+  lcd.print("LCD brightness");
+
+  lcd.setCursor(8, 1);
+  lcd.print("<");
+  lcd.setCursor(14, 1);
+  lcd.print(">");
+
+  analogWrite(lcdContrastControlPin, lcdContrast);
+
+  setContrastDisplay();
+  delay(50);
+  changingValueOfContrast();
+}
+
+void setContrastDisplay() {
+  byte contrastLevel;
+
+  if (lcdContrast == 25) {
+    contrastLevel = 0;
+  } else if (lcdContrast == 50) {
+    contrastLevel = 1;
+  } else if (lcdContrast == 75) {
+    contrastLevel = 2;
+  } else if (lcdContrast == 100) {
+    contrastLevel = 3;
+  } else if (lcdContrast == 125) {
+    contrastLevel = 4;
+  } else if (lcdContrast == 150) {
+    contrastLevel = 5;
+  }
+
+  for (int i = 0; i < contrastLevel; i++) {
+    lcd.setCursor(9 + i, 1);
+    lcd.write((byte)0);
+  }
+  for (int i = contrastLevel; i < 5; i++) {
+    lcd.setCursor(9 + i, 1);
+    lcd.write((byte)1);
+  }
+}
+
+// we move with 51 step for lcd contrast
+void changingValueOfContrast() {
+  if (yValue < minThreshold && xValue > minThreshold && xValue < maxThreshold && !yJoystickState) {  // move to left
+    yJoystickState = true;
+    if (lcdContrast != 25) {
+      lcdContrast -= 25;
+    }
+  }
+  if (yValue > maxThreshold && xValue > minThreshold && xValue < maxThreshold && !yJoystickState) {  // move to right
+    yJoystickState = true;
+    if (lcdContrast != 150) {
+      lcdContrast += 25;
+    }
+  }
+  if (yValue < maxThreshold && yValue > minThreshold) {
+    yJoystickState = false;
   }
 }
 
@@ -1402,12 +1528,14 @@ void scrollText(int startLetter, String message) {  // logic for scrolling a tex
 void setupEEPROM() {
   lcdBrightness = 102;
   matrixBrightness = 15;
+  lcdContrast = 100;
   sound = true;
   numberOfHighscores = 0;
 
   EEPROM.put(0, lcdBrightness);
   EEPROM.put(1, matrixBrightness);
   EEPROM.put(2, sound);
+  EEPROM.put(3, lcdContrast);
   EEPROM.put(19, numberOfHighscores);
 }
 
@@ -1416,6 +1544,7 @@ void readDataFromEEPROM() {
   lcdBrightness = EEPROM.read(0);
   matrixBrightness = EEPROM.read(1);
   sound = EEPROM.read(2);
+  lcdContrast = EEPROM.read(3);
   numberOfHighscores = EEPROM.read(19);
 
   for (int i = 1; i <= numberOfHighscores; i++) {
