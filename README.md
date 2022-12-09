@@ -125,6 +125,16 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 ### Homework #5: Menu specific for a game + snake for exemple of minigame :video_game: :snake:
 
+**Components**:
+- joystick (for moving and clicking)
+- matrix 8x8
+- MAX7219 Driver5 + 10k ohm resister
+- LCD
+- potentiometer (to ajust LCD contrast)
+- buzzer (for sound) + 100 ohm resistor
+- 2 mini + 1 big breadboards
+- wires
+
 **Task Requirements**: 
 
 :battery: Created a menu for a game that contains every real-world game components such as: start game, leaderboard, data about the creator of the game and how to play section. Also a settings menu where the player can ajust the game after his preferences (set a player name for him, set difficulty of the game - low, medium, high -,  turn the sound on/off, set the brightness as he please).
