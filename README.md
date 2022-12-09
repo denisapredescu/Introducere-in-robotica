@@ -137,7 +137,7 @@ This repository contains the weekly homeworks that include requirements, code, i
 
 **Task Requirements**: 
 
-:battery: Created a menu for a game that contains every real-world game components such as: start game, leaderboard, data about the creator of the game and how to play section. Also a settings menu where the player can ajust the game after his preferences (set a player name for him, set difficulty of the game - low, medium, high -,  turn the sound on/off, set the brightness as he please).
+:battery: Created a game menu that contains the basic real-world game components such as: start game, leaderboard, data about the creator of the game and how to play section. Also a settings menu where the player can ajust the game after his preferences (set a player name for him, set difficulty of the game - low, medium, high -,  turn the sound on/off, set the brightness as he please).
 
 :battery: The leaderboard and the essential settings are saved in EEPROM for future use. 
 
